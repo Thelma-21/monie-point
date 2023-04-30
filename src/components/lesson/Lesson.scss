@@ -1,0 +1,41 @@
+:root {
+    --primaryColor: #696ABD;
+    --secondaryColor: #FF8E56;
+    --bgColor: #F6F8FF;
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: #252426;
+    --blackColor2: #676767;
+    --greyColor: #CDCDCD;
+    --primarySupp: #CCCDF1;
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --progressBg: #FDD5C5;
+    --greenColor: #71B39C;
+}
+
+.lesson-container {
+    width: 100%;
+
+    .image-card {
+        position: relative;
+        width: 160px;
+        height: 100px;
+        background: var(--whiteColor);
+        overflow: hidden;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            transform: rotate(15deg);
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    .lesson-text {
+        p {
+            color: var(--greyColor);
+        }
+    }
+}

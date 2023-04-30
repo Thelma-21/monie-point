@@ -1,0 +1,126 @@
+:root {
+    --primaryColor: #696ABD;
+    --secondaryColor: #FF8E56;
+    --bgColor: #F6F8FF;
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: #252426;
+    --blackColor2: #676767;
+    --greyColor: #CDCDCD;
+    --primarySupp: #CCCDF1;
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --progressBg: #FDD5C5;
+    --greenColor: #71B39C;
+}
+
+.container-wrapper {
+    background: var(--bgColor);
+    width: 100vw;
+    min-height: 100vh;
+    
+    main {
+        padding: 3rem 1.5rem 0 1.5rem;
+        width: 100%;
+        min-height: calc(100vh - 70px);
+
+        .greeting {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            line-height: 0.5rem;
+            color: var(--blackColor);
+
+            .greeting-question {
+                color: var(--primaryColor);
+                font-size: 20px;
+                font-weight: 900;
+
+                span {
+                    color: var(--secondaryColor);
+                }
+            }
+        }
+
+        .greeting-icon {
+            background: var(--whiteColor);
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            color: var(--blackColor);
+            font-weight: 600;
+            
+            .flame-icon {
+                font-size: 25px;
+                margin-right: 3px;
+                border: 2px solid var(--secondaryColor);
+                border-radius: 50%;
+                color: var(--secondaryColor);
+            }
+        }
+
+        .goal {
+            border: 3px solid var(--primaryColor);
+            border-radius: 30px;
+            width: 100%;
+            margin-top: 1.5rem;
+            background: var(--whiteColor);
+            padding: 1rem 1.3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left-side {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+
+                .goal-text {
+                    color: var(--primaryColor);
+                }
+
+                .outer {
+                    position: relative; 
+                    margin: 0; 
+                    height: 100px;
+                    width: 100px;
+                    padding: 2px;
+                    border-radius: 50%;
+                    background: var(--progressBg);
+
+                    .inner {
+                        position: absolute; 
+                        top: 50%; 
+                        left: 50%; 
+                        transform: translate(-50%, -50%); 
+                        height: 75px;
+                        width: 75px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: var(--whiteColor);
+
+                        #number {
+                            font-weight: 500; 
+                            font-size: 20px;
+                        }
+                      } 
+                  }
+            }
+
+            .right-side {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 60%;
+
+                .small-text {
+                    color: var(--blackColor2);
+                }
+            }
+        }
+    }
+}
